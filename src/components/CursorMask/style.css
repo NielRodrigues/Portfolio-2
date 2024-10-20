@@ -1,0 +1,36 @@
+.mask{
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #13121450;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+.mask-click{
+    position: fixed;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #13121480;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.mask-click:before{
+    content: "Clique";
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFF;
+}
