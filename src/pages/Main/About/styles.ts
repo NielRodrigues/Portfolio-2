@@ -4,6 +4,7 @@ export const Container = styled.div`
   height: auto;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.black};
+  // background: linear-gradient(to top, ${({ theme }) => theme.colors.background1}, ${({ theme }) => theme.colors.black});
   display: flex;
   flex-direction: column;
   align-items: center;
