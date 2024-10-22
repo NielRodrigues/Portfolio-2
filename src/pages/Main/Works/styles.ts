@@ -23,6 +23,25 @@ export const Content = styled.a`
   position: relative;
   text-decoration: none;
   overflow: hidden;
+
+  div.on-going{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: #0D0D0D;
+    border: 1px solid ${({ theme }) => theme.colors.gray900};
+    font-size: 12px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.colors.yellow};
+    width: fit-content;
+    border-radius: 2px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    z-index: 2;
+
+  }
   
   div.img{
     position: relative;
@@ -84,11 +103,66 @@ export const Content = styled.a`
       color: ${({ theme }) => theme.colors.text};
       font-weight: 400;
     }
+
+    div.line{
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+      justify-content: space-between;
+
+      p{
+        font-size: 12px;
+        font-weight: 300;
+        color: ${({ theme }) => theme.colors.gray300};
+        width: 100%;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    div.stacks{
+      display: flex;
+      align-items: center;
+      min-width: fit-content;
+
+      div.stack{
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 16px;
+        border: 1px solid ${({ theme }) => theme.colors.gray900};
+        background-color: #0D0D0D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s;
+        
+        margin-left: -12px;
+
+        &:first-child{
+          margin-left: 0px;
+        }
+
+        img{
+          height: 22px;
+          width: 22px;
+          object-fit: contain;
+        }
+      }
+    }
   }
 
   &:hover{
     div.content{
       background-color: ${({ theme }) => theme.colors.background1};
+
+      div.stacks div.stack{
+        background-color: ${({ theme }) => theme.colors.background1};
+      }
 
       svg.arrow{
         transform: scale(100%);
