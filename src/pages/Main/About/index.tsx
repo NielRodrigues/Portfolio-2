@@ -9,7 +9,7 @@ function About() {
     <Container id='sobre'>
       <Card>
         <div className="content">
-          <h1>Um pouco sobre mim...</h1>
+          <h1>Um pouco sobre mim<span>...</span></h1>
           <div className="line-card">
             <img src={picture} alt="" />
             <div className="text">

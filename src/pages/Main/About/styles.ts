@@ -35,8 +35,8 @@ export const Card = styled.div`
     align-items: center;
     gap: 24px;
 
-    h1{
-      
+    h1 span{
+      color: ${({ theme }) => theme.colors.primary};
     }
 
     div.line-card{
