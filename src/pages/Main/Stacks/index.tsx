@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Container } from './styles'
+import Title from '../../../components/Title'
 
 
 function Stacks() {
@@ -47,11 +48,6 @@ function Stacks() {
       stack: "PostgreSQL",
       category: "web",
     },
-    {
-      img: require("../../../assets/images/mongodb.png"),
-      stack: "MongoDB",
-      category: "web",
-    },
 
     {
       img: require("../../../assets/images/reactnative.png"),
@@ -94,7 +90,7 @@ function Stacks() {
 
   return (
     <Container id='tecnologias'>
-      <h1>Tecnologias<span>...</span></h1>
+      <Title text='Tecnologias' />
 
       <div className="content">
         <aside>

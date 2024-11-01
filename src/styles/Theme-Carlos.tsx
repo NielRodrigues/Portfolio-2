@@ -7,24 +7,25 @@ export const theme: DefaultTheme = {
     primary: '#FD6649',
     primaryVariant: '#FF9068',
 
-    yellow: '#F9E400',
-    red: '#FF5C5C',
+    yellow: '#f6c61b',
+    red: '#f6601b',
 
-    text: '#F3F3F3',
+    text: '#FFFFFF',
 
-    background1: '#131214',
-    background2: '#1A1A1B',
+    background1: '#121214',
+    background2: '#0f0f10',
+    background3: '#101012',
 
-    white: '#F3F3F3',
-    black: '#0F0A0B',
+    white: '#FFFFFF',
+    black: '#000000',
 
     gray100: '#B6B8BF',
     gray200: '#9B9CA0',
     gray300: '#86878B',
     gray400: '#737477',
     gray600: '#57585B',
-    gray800: '#393A3D',
-    gray900: '#2E2E30',
+    gray800: '#202024',
+    gray900: '#1e1e1e',
   },
 }
 

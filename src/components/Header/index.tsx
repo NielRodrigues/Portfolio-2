@@ -16,14 +16,14 @@ function Header() {
       <div className="menu">
         <div className="links">
           <LinkMenu text='Sobre' link='#sobre' />
-          <LinkMenu text='Trabalhos' link='#trabalhos' />
-          <LinkMenu text='Tecnologia' link='#' />
-          <LinkMenu text='Experiências' link='#' />
-          <LinkMenu text='Formações' link='#' />
+          <LinkMenu text='Projetos' link='#projetos' />
+          <LinkMenu text='Tecnologias' link='#tecnologias' />
+          <LinkMenu text='Experiências' link='#experiencias' />
+          <LinkMenu text='Formações' link='#formacoes' />
         </div>
         <div className="line"></div>
 
-        <Button2 text='Contato' link='#' icon={<MailIcon />} />
+        <Button2 text='Contato' link='#contato' icon={<MailIcon />} />
       </div>
       
     </Container>

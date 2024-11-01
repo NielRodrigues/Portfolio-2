@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from './styles'
 import logoAL from "../../../assets/images/AL.svg"
+import Title from '../../../components/Title'
 
 
 function Experiences() {
@@ -15,9 +16,9 @@ function Experiences() {
       img: logoAL,
       start: new Date("10/08/2024"), // MM/DD/AAAA - Mês / Dia / Ano
       end: "", // MM/DD/AAAA
-      model: "Remota",
+      model: "Remoto",
       location: "Florianópolis, Santa Catarina",
-      description: "Na Academia Lendári[IA] eu sou resonsável por criar Designs para web utilizando ferramentas como Figma e Canvas. Criação de Designs para posts no Instagram, páginas webs utilizando WordPress e Elementor.",
+      description: "Na Academia Lendári[IA], sou responsável pela criação de designs para a web usando ferramentas como Figma e Canva. Também desenvolvo designs para posts no Instagram e páginas web, utilizando WordPress e Elementor.",
     },
     {
       position: "Desenvolvedor Frontend Júnior",
@@ -25,9 +26,9 @@ function Experiences() {
       img: require("../../../assets/images/visior.png"),
       start: new Date("06/02/2024"), // MM/DD/AAAA - Mês / Dia / Ano
       end: new Date("10/01/2024"), // MM/DD/AAAA
-      model: "Remota",
+      model: "Remoto",
       location: "Florianópolis, Santa Catarina",
-      description: "Na Visi'Or, sou responsável pelo desenvolvimento de páginas web utilizando Elementor, integrando animações para aprimorar a experiência do usuário por meio de GSAP e framer-motion com JavaScript.",
+      description: "Na Visi'Or, fui responsável pelo desenvolvimento de páginas web com Elementor, integrando animações para aprimorar a experiência do usuário por meio de GSAP e Framer Motion com JavaScript.",
     }
   ]
 
@@ -36,14 +37,22 @@ function Experiences() {
     const endDate = end;
   
     const yearsDiff = endDate.getFullYear() - startDate.getFullYear();
-    const monthsDiff = endDate.getMonth() - startDate.getMonth();
+    const monthsDiff = endDate.getMonth() + 1  - startDate.getMonth();
+
+    let calc = yearsDiff * 12 + monthsDiff
+
+    if (calc >= 12) {
+      const years = Math.floor(calc / 12);
+      const months = calc % 12;
+      return `${years} ${years > 1 ? 'anos' : 'ano'}${months > 0 ? ` e ${months} ${months > 1 ? 'meses' : 'mês'}` : ''}`
+    }
   
-    return yearsDiff * 12 + monthsDiff;
+    return `${calc} ${calc > 1 ? 'meses' : 'mês'}`;
   };
 
   return (
     <Container id='experiencias'>
-      <h1>Experiências<span>...</span></h1>
+      <Title text='Experiências' />
 
       <div className="content">
         {
@@ -53,7 +62,7 @@ function Experiences() {
               <div className="text">
                 <h1>{item.position}</h1>
                 <h4>{item.company}</h4>
-                <h4>{months[item.start.getMonth()]} de {item.start.getFullYear()} - {item.end ? `${months[item.end.getMonth()]} de ${item.end.getFullYear()}` : 'o momento'} · ({item.end ? `${diffInMonths(item.start, item.end)} meses` : `${diffInMonths(item.start, new Date())} meses`})</h4>
+                <h4>{months[item.start.getMonth()]} de {item.start.getFullYear()} - {item.end ? `${months[item.end.getMonth()]} de ${item.end.getFullYear()}` : 'o momento'} · ({item.end ? `${diffInMonths(item.start, item.end)}` : `${diffInMonths(item.start, new Date())}`})</h4>
                 <h4>{item.location} · {item.model}</h4>
                 <h3>{item.description}</h3>  
               </div>

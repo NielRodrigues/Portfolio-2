@@ -36,7 +36,7 @@ function Top() {
         <Stack src={python} text='Python' />
       </div>
 
-      <Button1 link='#' text='Confira meu portfólio' icon={<ArrowDownIcon />} />
+      <Button1 link='#projetos' text='Confira meu portfólio' icon={<ArrowDownIcon />} />
     </Container>
   )
 }

@@ -12,16 +12,17 @@ import postgres from '../../../assets/images/postgresql.png'
 import python from '../../../assets/images/python.png'
 import nextjs from '../../../assets/images/nextjs.png'
 import nestjs from '../../../assets/images/nestjs.png'
+import Title from '../../../components/Title'
 
 function Works() {
   return (
-    <Container id='trabalhos'>
+    <Container id='projetos'>
       <Content href=''>
         <div className="on-going">
           <span>EM ANDAMENTO</span>
         </div>
         <div className="img">
-          <img src="https://www.rocketseat.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fia-for-devs.e05d19c5.png&w=1200&q=75" alt="" />
+          <img src="https://linda-hoang.com/wp-content/uploads/2014/10/img-placeholder-dark.jpg" alt="" />
         </div>
         <div className="content">
           <ArrowIcon className='arrow' />
@@ -44,7 +45,7 @@ function Works() {
 
       <Content href=''>
         <div className="img">
-          <img src="https://www.rocketseat.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgo-thumb.6aea3ffe.webp&w=1200&q=75" alt="" />
+          <img src="https://linda-hoang.com/wp-content/uploads/2014/10/img-placeholder-dark.jpg" alt="" />
         </div>
         <div className="content">
           <ArrowIcon className='arrow' />
@@ -73,7 +74,7 @@ function Works() {
 
       <Content href=''>
         <div className="img">
-          <img src="https://www.rocketseat.com.br/_next/static/media/fullstack.573f0929.svg" alt="" />
+          <img src="https://linda-hoang.com/wp-content/uploads/2014/10/img-placeholder-dark.jpg" alt="" />
         </div>
         <div className="content">
           <ArrowIcon className='arrow' />
@@ -99,7 +100,7 @@ function Works() {
 
       <Content href=''>
         <div className="img">
-          <img src="https://www.rocketseat.com.br/_next/static/media/devops.d65ccbe0.svg" alt="" />
+          <img src="https://linda-hoang.com/wp-content/uploads/2014/10/img-placeholder-dark.jpg" alt="" />
         </div>
         <div className="content">
           <ArrowIcon className='arrow' />
@@ -122,7 +123,7 @@ function Works() {
 
       <Content href=''>
         <div className="img">
-          <img src="https://www.rocketseat.com.br/_next/static/media/react.cf087536.svg" alt="" />
+          <img src="https://linda-hoang.com/wp-content/uploads/2014/10/img-placeholder-dark.jpg" alt="" />
         </div>
         <div className="content">
           <ArrowIcon className='arrow' />
@@ -151,7 +152,7 @@ function Works() {
 
       <Content href=''>
         <div className="img">
-          <img src="https://www.rocketseat.com.br/_next/static/media/java.549419c6.svg" alt="" />
+          <img src="https://linda-hoang.com/wp-content/uploads/2014/10/img-placeholder-dark.jpg" alt="" />
         </div>
         <div className="content">
           <ArrowIcon className='arrow' />

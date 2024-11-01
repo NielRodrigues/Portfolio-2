@@ -7,6 +7,9 @@ import About from './About'
 import Works from './Works'
 import Stacks from './Stacks'
 import Experiences from './Experiences'
+import Training from './Training'
+import Contact from './Contact'
+import Footer from './Footer'
 
 export default function Main() {
 
@@ -19,6 +22,9 @@ export default function Main() {
       <Works />
       <Stacks />
       <Experiences />
+      <Training />
+      <Contact />
+      <Footer/>
 
       <WhatsAppButton href='https://wa.me/5538999603639' target='_blank'>
         <WppIcon />

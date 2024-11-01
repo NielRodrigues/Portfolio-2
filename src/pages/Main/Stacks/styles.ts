@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   height: auto;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.background1};
+  background-color: ${({ theme }) => theme.colors.background3};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +41,7 @@ export const Container = styled.div`
         gap: 16px;
         display: flex;
         align-items: center;
-        background-color: ${({ theme }) => theme.colors.background2};
+        background-color: ${({ theme }) => theme.colors.background1};
         cursor: pointer;
         border-bottom: 1px solid ${({ theme }) => theme.colors.gray900};
         overflow: hidden;
